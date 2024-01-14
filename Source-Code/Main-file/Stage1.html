@@ -123,21 +123,16 @@
             <button id="startExercise">Start 30-Day Exercise Plan</button>
         </div>
 
-        <!-- The iframe to display the content -->
-        <div style="text-align: center; margin-top: 20px;">
-            <iframe id="exerciseFrame" width="100%" height="600px" frameborder="0"></iframe>
-        </div>
-
         <script>
-            // Function to change the iframe source
+            // Function to change the window location
             function loadExercisePage() {
-                var iframe = document.getElementById('exerciseFrame');
-                iframe.src = 'Source Code/Main file/Stage 2.html';
+                window.location.href = 'https://github.com/Daksh-M-Coder/SEN-MICRO-PROJECT/raw/main/SOFTWARE%20ENGINEERING%20MICRO%20PROJECT/Source%20Code/Main%20file/Stage%202.html';
             }
 
             // Attach the function to the button click event
             document.getElementById('startExercise').addEventListener('click', loadExercisePage);
         </script>
+
     </main>
 
     <footer>
