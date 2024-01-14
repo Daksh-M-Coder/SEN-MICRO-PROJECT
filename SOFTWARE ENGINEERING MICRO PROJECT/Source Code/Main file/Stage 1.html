@@ -92,14 +92,52 @@
 
     <main>
         <h2>Why Exercise is Important</h2>
-        <!-- Your existing content here -->
+        <p>Regular exercise is crucial for maintaining a healthy lifestyle. It not only helps in achieving physical
+            fitness
+            but also contributes significantly to mental well-being. Here are some key benefits of incorporating
+            exercise
+            into your daily routine:</p>
+
+        <ul>
+            <li>Improves cardiovascular health and reduces the risk of heart diseases.</li>
+            <li>Helps in weight management and contributes to maintaining a healthy body composition.</li>
+            <li>Boosts mood and reduces stress levels through the release of endorphins.</li>
+            <li>Enhances flexibility, strength, and overall physical fitness.</li>
+            <li>Improves sleep quality and promotes better sleep patterns.</li>
+            <li>Contributes to better concentration and cognitive function.</li>
+        </ul>
+
+        <p>Embark on a 30-day exercise journey with our comprehensive workout plan designed to target different muscle
+            groups and improve overall fitness. Click the button below to get started!</p>
+
+        <div style="display: flex; justify-content: center;">
+            <video autoplay loop muted playsinline style="width: 100%; max-width: 800px; height: auto;">
+                <source src="https://github.com/Daksh-M-Coder/SEN-MICRO-PROJECT/raw/main/Resources/Overlook.mp4"
+                    type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
 
         <!-- Button to navigate to the Exercise Page -->
         <div style="text-align: center; margin-top: 20px;">
-            <a href="exercise.html">
-                <button>Start 30-Day Exercise Plan</button>
-            </a>
+            <button id="startExercise">Start 30-Day Exercise Plan</button>
         </div>
+
+        <!-- The iframe to display the content -->
+        <div style="text-align: center; margin-top: 20px;">
+            <iframe id="exerciseFrame" width="100%" height="600px" frameborder="0"></iframe>
+        </div>
+
+        <script>
+            // Function to change the iframe source
+            function loadExercisePage() {
+                var iframe = document.getElementById('exerciseFrame');
+                iframe.src = 'Source Code/Main file/Stage 2.html';
+            }
+
+            // Attach the function to the button click event
+            document.getElementById('startExercise').addEventListener('click', loadExercisePage);
+        </script>
     </main>
 
     <footer>
