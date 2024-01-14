@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ONLINE GYM TRAINING SYSTEM</title>
     <style>
         body {
@@ -12,6 +12,21 @@
             padding: 0;
             background-color: #b2dfdb;
             /* Light blue-green background */
+        }
+
+        .video-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            /* Full height of the viewport */
+        }
+
+        video {
+            width: 70%;
+            /* Adjust the width as needed */
+            max-width: 100%;
+            /* Ensure the video doesn't exceed its natural size */
         }
 
         header {
@@ -73,17 +88,48 @@
 <body>
     <header>
         <h1>ONLINE GYM TRAINING SYSTEM</h1>
-        <nav>
-            <ul>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#workouts">Workouts</a></li>
-                <li><a href="#footer">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-
     <main>
+        <h2>Why Exercise is Important</h2>
+        <p>Regular exercise is crucial for maintaining a healthy lifestyle. It not only helps in achieving physical
+            fitness
+            but also contributes significantly to mental well-being. Here are some key benefits of incorporating
+            exercise
+            into your daily routine:</p>
+
+        <ul>
+            <li>Improves cardiovascular health and reduces the risk of heart diseases.</li>
+            <li>Helps in weight management and contributes to maintaining a healthy body composition.</li>
+            <li>Boosts mood and reduces stress levels through the release of endorphins.</li>
+            <li>Enhances flexibility, strength, and overall physical fitness.</li>
+            <li>Improves sleep quality and promotes better sleep patterns.</li>
+            <li>Contributes to better concentration and cognitive function.</li>
+        </ul>
+
+        <p>Embark on a 30-day exercise journey with our comprehensive workout plan designed to target different muscle
+            groups and improve overall fitness. Click the button below to get started!</p>
+
+        <div style="display: flex; justify-content: center;">
+            <video autoplay loop muted playsinline style="width: 100%; max-width: 800px; height: auto;">
+                <source src="https://github.com/Daksh-M-Coder/SEN-MICRO-PROJECT/raw/main/Resources/Overlook.mp4"
+                    type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div style="display: flex; justify-content: center;">
+            <!-- Link to the second main section -->
+            <a href="#day1" target="_blank">
+                <button>
+                    Get Started
+                </button>
+            </a>
+        </div>
+
+    </main>
+
+    <main id="day1">
         <!-- Day 1 -->
         <h2>Day 1: Full Body Workout</h2>
         <ul>
@@ -427,6 +473,17 @@
             <li><strong>Exercise 1:</strong> 25-Minute Cardio Session - Engage in your favorite cardio activity to get
                 your heart rate up.</li>
         </ul>
+
+        <!-- <video width="640" height="360" autoplay muted loop>
+            <source
+                src="https://github.com/Daksh-M-Coder/SEN-MICRO-PROJECT/raw/main/WhatsApp%20Video%202024-01-14%20at%2016.26.13_3da7699c.mp4"
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video> -->
+        <div style="display: flex; justify-content: center;">
+            <img src="https://github.com/Daksh-M-Coder/SEN-MICRO-PROJECT/blob/main/Resources/Equipments.jpg" alt=""
+                style="width: 100%; max-width: 800px; height: auto;">
+        </div>
 
     </main>
 
