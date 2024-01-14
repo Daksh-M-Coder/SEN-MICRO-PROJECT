@@ -124,9 +124,16 @@
         </div>
 
         <script>
-            // Function to change the window location
+            // Function to open the GitHub HTML file in a new tab
             function loadExercisePage() {
-                window.location.href = 'https://github.com/Daksh-M-Coder/SEN-MICRO-PROJECT/raw/main/SOFTWARE%20ENGINEERING%20MICRO%20PROJECT/Source%20Code/Main%20file/Stage%202.html';
+                // Path to the HTML file within the repository
+                var filePath = 'SOFTWARE%20ENGINEERING%20MICRO%20PROJECT/Source%20Code/Main%20file/Stage%202.html';
+
+                // Construct the raw.githubusercontent.com link
+                var rawLink = 'https://raw.githubusercontent.com/Daksh-M-Coder/SEN-MICRO-PROJECT/main/' + filePath;
+
+                // Open the link in a new tab
+                window.open(rawLink, '_blank');
             }
 
             // Attach the function to the button click event
